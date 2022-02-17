@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | Curso pratico de Js Platzi</title>
+    <link rel="stylesheet" href="./figuras.css">
+</head>
+<body>
+    <header class="tittle">
+        <h1>Figuras Geometricas </h1>
+        <p>Este es el primer taller del curso Pratico de JavaScript </p>
+    </header>
+    <h2 class="h2">Calcula el area y perimetro de tus figuras FAVORITAS </h2>
+    <section class="content-figures">
+        <!-- Cuadrado -->
+        <form action="" class="cuadrado">
+            <div class="img-cuadrado">
+                <img src="http://assets.stickpng.com/images/58afdac9829958a978a4a691.png" alt="Cuadrado">
+                <p>Cuadrado</p>
+            </div>
+            <div class="input-numbers">
+                <label for="InputCuadrado">Lado</label>
+                <input id="InputCuadrado" type="number">
+            </div>
+
+            <div class="content-button">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perimetro 
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el area
+                </button>
+            </div>
+        </form>
+        <!-- Triangualo  -->
+        <form action="">
+            <div class="img-cuadrado">
+                <img src="http://pngimg.com/uploads/triangle/triangle_PNG85.png" alt="Triangulo">
+                <p>Triangulo</p>
+            </div>
+            <div class="input-numbers">
+                <label for="InputTriangulo1">Lado 1</label>
+                <input id="InputTriangulo1" type="number">
+            </div>
+
+            <div class="input-numbers">
+                <label for="InputTriangulo2">Lado 2</label>
+                <input id="InputTriangulo2" type="number">
+            </div>
+
+            <div class="input-numbers">
+                <label for="InputTriangulo3"> Base </label>
+                <input id="InputTriangulo3" type="number">
+            </div>
+
+            <div class="input-numbers">
+                <label for="InputTriangulo4">Altura</label>
+                <input id="InputTriangulo4" type="number">
+            </div>
+            <div class="content-button">
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perimetro 
+                </button>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el area
+                </button>
+            </div>
+        </form>
+        <!-- Circulo -->
+        <form action="">
+            <div class="img-circulo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Circle_%28transparent%29.svg/220px-Circle_%28transparent%29.svg.png" alt="Circuclo">
+                <p>Circulo</p>
+            </div>
+
+            <div class="input-numbers">
+                <label for="InputCirculo">Radio</label>
+                <input id="InputCirculo" type="number">
+            </div>
+
+            <div class="content-button">
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perimetro 
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular el area
+                </button>
+            </div>
+        </form>
+    </section>
+    <script src="./figuras.js"></script>
+</body>
+</html>
